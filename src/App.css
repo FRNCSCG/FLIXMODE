@@ -1,0 +1,255 @@
+@import '@fontsource/roboto/300.css';
+@import url('https://fonts.googleapis.com/css2?family=Livvic:wght@700&display=swap');
+.App {
+
+}
+
+body{
+  font-family:'Roboto';
+  background-color: #120d1a;
+  display:flex;
+  min-height: 100vh;
+  justify-content: center;
+  margin: 0px;
+  overflow-x: hidden;
+
+}
+
+.home {
+  background-color: #15183b00;
+  border-radius: 10px;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  scrollbar-color: #12142e #2429428c;
+  flex-direction: column;
+  color:#ffffff;
+  position: relative;
+  overflow: hidden;
+  margin: 0px;
+
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+  width: 70%;
+  font-size: 20px;
+  font-family: 'Livvic', sans-serif;
+  color: rgb(160, 95, 34);
+  color: aliceblue;
+
+  
+}
+
+.logo img {
+  width: 10%;
+}
+
+
+
+.txt {
+  display: flex;
+  margin: 15px auto;
+  width: 40vw;
+  box-shadow: 0px 3px 15px black;
+}
+
+.tbox {
+  color: #3f51b5 !important;
+  background-color: #1f235342;
+  
+  
+}
+.tbox-input {
+  color: white !important;
+}
+.tbox-label {
+  color: #4255be !important;
+}
+.MuiOutlinedInput-notchedOutline {
+  border: 0.3px solid !important;
+  border-color: #12142e42 !important;
+}
+
+.radio {
+  color: #414f9e !important;
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: flex;
+  z-index: -2;
+  filter: blur(3px);
+  box-shadow: inset 0 0px 30px #351212;
+}
+
+.top-bg {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(209, 42, 98, 0.164));
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+
+.categories {
+  display: flex;
+  margin: 15px auto;
+}
+
+.results{
+  display: flex;
+  flex-direction: column;
+  /* background-color: #353a688f; */
+  /* background-color: #242847; */
+  width: 80%;
+  margin: 5px auto;
+  /* border-radius: 10px; */
+  /* overflow: hidden; */
+  
+}
+
+.show {
+}
+
+.card-list{
+  background-color: #242847;
+  border-radius: 15px;
+  margin: 10px 0px;
+  box-shadow: 0px 5px 20px black;
+}
+.card-container{
+  width: 98%;
+  display: flex;
+  margin: auto;
+  overflow-x: auto;
+  text-align: center;
+}
+.list-title {
+  display: flex;
+  /* background-color: #120d1a6c; */
+  background-image: linear-gradient(to bottom, #120d1a6c, rgba(255, 255, 255, 0));
+  
+
+}
+
+.card {
+ width: 220px;
+ height: 150px; 
+ align-items: center; 
+ justify-content: center;
+ background-color: #10161f !important;
+ color: white !important;
+ overflow: hidden;
+}
+.card-desc {
+  opacity: 0;
+  display: flex;
+  flex-direction: row;
+  transition: 0.3s;
+}
+.card-img { 
+  transition: 0.3s;
+}
+.card:hover > .card-img{
+  width: 100%;
+  height: 170px; 
+  filter: blur(8px);
+  overflow: hidden;
+  transition: 0.5s;
+  
+} 
+.card:hover > .card-title {
+  position: absolute;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0.11));
+}
+.card:hover .card-desc {
+  opacity: 1;
+
+}
+
+
+
+
+
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 0.8em;
+  height: 0.8em;
+}
+::-webkit-scrollbar-track {
+  background: #66656500; 
+}
+  ::-webkit-scrollbar-thumb {
+  background: rgb(34, 33, 33); 
+  border-radius: 100vw;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(53, 51, 51); 
+}
+
+/* Ellipsis */
+
+.text-ellipsis{
+  text-overflow:ellipsis;
+  overflow:hidden;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}
+
+
+
+
+/* Landscape phones and down */
+@media (max-width: 480px) { }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+  .home {
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0px;
+  }
+  .results{
+    width: 96vw;
+  }
+
+  .logo img {
+    width: 30%;
+  }
+
+  .txt {
+    width: 80vw;
+  }
+
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+  .logo img {
+    width: 20%;
+  }
+  .txt {
+    width: 80vw;
+  }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) { }
+
+
+

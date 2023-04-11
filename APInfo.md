@@ -1,0 +1,6 @@
+API_KEY = ca5a09abc57fc32fe2abcfe82c33fde8
+
+API Read Access Token = eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjYTVhMDlhYmM1N2ZjMzJmZTJhYmNmZTgyYzMzZmRlOCIsInN1YiI6IjYzM2E2YjhhMjNiY2Y0MDA5MTgxOWQ2YyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.-HJG7ggDb5nf1IWNtNkp0Yf6Mg-LZoVmGxP0EcdHaJU
+
+API_URL="https://api.themoviedb.org/3/movie/popular?api_key=ca5a09abc57fc32fe2abcfe82c33fde8"
+SEARCH_URL="https://api.themoviedb.org/3/search/movie?api_key=ca5a09abc57fc32fe2abcfe82c33fde8&query"
